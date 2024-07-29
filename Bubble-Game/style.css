@@ -1,0 +1,75 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100%;
+    width: 100%;
+    font-family: "Outfit", sans-serif;
+    background: rgb(86, 172, 129);
+}
+
+.main{
+    height: 85vh;
+    width: 80%;
+    margin-top: 5%;
+    margin-inline: auto;
+    background: #fff;
+    border-radius: 1rem;
+    overflow: hidden;
+}
+
+.main .top{
+    width: 100%;
+    height: 10%;
+    min-height: 72px;
+    background: rgb(35, 100, 69);
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 7.5rem;
+}
+
+.main .top h3{
+    font-weight: 400;
+}
+
+.main .top h3 span {
+    padding: 7.5px 12.5px;
+    margin-left: 20px;
+    background: #fff;
+    color: #000;
+    border-radius: 0.25rem;
+}
+
+.main .bottom{
+    height: 90%;
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+    color: rgb(35, 100, 69);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.main .bottom .bbl{
+    width: 56px;
+    height: 56px;
+    background: rgb(35, 100, 69);
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+
+.main .bottom .bbl:hover{
+    cursor: pointer;
+    background: rgb(20, 68, 45);
+}
