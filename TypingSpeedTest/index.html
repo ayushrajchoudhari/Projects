@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Typing Speed Test | theayushraj.com</title>
+
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="container-fluid box">
+      <div class="top">
+        <h1 id="heading" class="salmon">Typing Speed Test</h1>
+        <div class="limits-box">
+          <div class="limit">
+            <a id="thirty" class="grey crimsone" href="#">30s</a>
+            <a id="sixty" class="grey" href="#">60s</a>
+          </div>
+          <div class="limit">
+            <a id="beg" class="grey crimsone" href="#">BEGINNER</a>
+            <a id="pro" class="grey" href="#">PROFICIENT</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="stats center">
+        <div class="stat-block if">
+          <div id="timeName" class="stat-name yellow if">Time</div>
+          <div id="time" class="details if">30</div>
+        </div>
+
+        <div class="stat-block if">
+          <div id="cwName" class="stat-name yellow if">CW</div>
+          <div id="cw" class="details if">0</div>
+        </div>
+      </div>
+
+      <div class="text-display" id="textDisplay"></div>
+
+      <div class="input-area center">
+        <textarea rows="1" class="text-input" id="textInput" placeholder="|"></textarea>
+      </div>
+
+      <div class="restart-button center">
+        <a id="restartBtn" class="current" href="#">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            class="icon icon-tabler icons-tabler-outline icon-tabler-rotate-clockwise"
+          >
+            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+            <path d="M4.05 11a8 8 0 1 1 .5 4m-.5 5v-5h5" />
+          </svg>
+        </a>
+      </div>
+    </div>
+
+    <div class="rules">
+        <p>* Please select the difficulty level according to your will before starting.</p>
+        <p>* Hit restart button to start the game once again.</p>
+        <p>* Hit spacebar to move to the next word, avoid hitting enter key.</p>
+        <a href="https://theayushraj.com/" style="color: seagreen;">
+            <p>* For more info please visit : </p>
+            theayushraj.com</a>
+    </div>
+
+    <script src="js/script.js"></script>
+   
+  </body>
+</html>
