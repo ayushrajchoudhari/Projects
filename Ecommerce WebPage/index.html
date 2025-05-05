@@ -6,20 +6,27 @@
   <title>Ecommerce Website</title>
   <link rel="stylesheet" href="utilities/utility.css">
   <link rel="stylesheet" href="components/navbar/navbar.css">
+  <link rel="stylesheet" href="components/carousel/carousel.css">
 </head>
 <body>
   <div id="app">
-    <!-- Components will be inserted here -->
+    <!-- Navbar will be inserted here -->
+    <!-- Carousel will be inserted here -->
   </div>
 
-  <script type="module" src="utilities/utility.js"></script>
   <script type="module">
     import Navbar from './components/navbar/navbar.js';
+    import Carousel from './components/carousel/carousel.js';
     
     const app = document.getElementById('app');
+    
+    // Only render if screen is large enough
     if (window.innerWidth >= 300) {
       const navbar = new Navbar().render();
-      if (navbar) app.prepend(navbar);
+      if (navbar) app.appendChild(navbar);
+      
+      const carousel = new Carousel().render();
+      if (carousel) app.appendChild(carousel);
     }
   </script>
 </body>

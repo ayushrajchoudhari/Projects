@@ -1,4 +1,9 @@
 /* utilities/utility.css */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 :root {
   /* Colors - Apple-inspired palette */
   --color-white: #ffffff;
@@ -38,6 +43,11 @@
   /* Transitions */
   --transition-fast: 0.15s ease;
   --transition-medium: 0.3s ease;
+}
+
+/* Base Rules */
+img {
+  vertical-align: middle;
 }
 
 /* Device Incompatibility Message */

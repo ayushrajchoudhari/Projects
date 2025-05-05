@@ -1,0 +1,133 @@
+/* components/carousel/carousel.css */
+@import "../../utilities/utility.css";
+
+@media (min-width: 300px) {
+  .carousel {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    margin: var(--space-md) auto;
+    background-color: var(--color-gray-light);
+  }
+
+  .carousel__track {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    height: 100%;
+  }
+
+  .carousel__slide {
+    min-width: 100%;
+    height: 100%;
+    background-color: rgb(130, 188, 211);
+  }
+
+  .carousel__image {
+    max-height: 100%;
+    width: 100%;
+    object-fit: contain;
+    overflow: hidden;
+    cursor: pointer;
+    display: block; /* Ensure image is displayed as block */
+  }
+
+  /* Navigation Arrows */
+  .carousel__button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(255, 255, 255, 0.7);
+    border: none;
+    border-radius: 50%;
+    width: 1.75rem;
+    height: 1.75rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    z-index: 10;
+    transition: all var(--transition-fast);
+    box-shadow: var(--shadow-sm);
+  }
+
+  .carousel__button:hover {
+    background: var(--color-white);
+    transform: translateY(-50%) scale(1.1);
+  }
+
+  .carousel__button--prev {
+    left: var(--space-md);
+  }
+
+  .carousel__button--next {
+    right: var(--space-md);
+  }
+
+  /* Dots Navigation */
+  .carousel__dots {
+    position: absolute;
+    bottom: var(--space-md);
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: var(--space-sm);
+    z-index: 10;
+  }
+
+  .carousel__dot {
+    width: 0.5rem;
+    height: 0.5rem;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.5);
+    border: none;
+    cursor: pointer;
+    transition: all var(--transition-fast);
+  }
+
+  .carousel__dot:hover {
+    transform: scale(1.2);
+  }
+
+  .carousel__dot--active {
+    background: var(--color-white);
+    transform: scale(1.2);
+  }
+
+  /* Responsive Styles */
+  @media (min-width: 1200px) {
+    .carousel {
+      max-height: 50vh;
+      min-height: 440px;
+      max-width: 1140px;
+      border-radius: var(--border-radius-md);
+    }
+
+    .carousel__track, .carousel__slide {
+      max-height: 50vh;
+      min-height: 440px;
+      max-width: 1140px;
+    }
+
+    .carousel__image {
+      max-height: 50vh;
+      min-height: 440px;
+    }
+  }
+
+  @media (max-width: 1199px) {
+    .carousel {
+      height: 40vh;
+      max-width: min(90vw, 880px);
+      border-radius: var(--border-radius-sm);
+    }
+
+    .carousel__track, .carousel__slide {
+      height: 40vh;
+      max-width: min(90vw, 880px);
+    }
+
+    .carousel__image {
+        max-height: 40vh;
+      }
+  }
+}
